@@ -28,5 +28,6 @@ end
 
 
 def find_min_value(array)
-  array.sort
+  array.sort { |a, b| a <=> b }
+  return array[0]
 end
