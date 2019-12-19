@@ -26,10 +26,16 @@ def find_max_value(array)
   return highest
 end
 
+def find_min_value(array)
+  min = array[0]
+  array.length.times { |index| min = array[index] if array[index] < min }
+  return min
+end
 
+=begin
 def find_min_value(array)
   array.sort!
   return array[0]
 end
+=end
 
-# I 
